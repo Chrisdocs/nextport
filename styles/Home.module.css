@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .footer {
@@ -47,11 +47,10 @@
 
 .title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -113,4 +112,18 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+/* Global Section Styling */
+
+/* Welcome Section */
+
+.welcome {
+	margin-left: 20%;
+}
+
+/* About Section */
+
+.about {
+	margin-left: 40%;
 }
