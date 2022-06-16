@@ -31,7 +31,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .title,
@@ -131,7 +131,17 @@
 	margin-bottom: 25%;
 	padding-right: 10px;
 	color: $primary-txt;
+	font-family: $font-primary;
+
+	h4 {
+		font-family: $font-secondary;
+	}
+
+	.description {
+		font-family: $font-secondary
+	}
 }
+
 
 @include buttonIntxt;
 
@@ -163,6 +173,7 @@
 		font-size: xxx-large;
 		font-weight: bold;
 		color: $primary-txt;
+		font-family: $font-primary;
 	}
 
 	.aboutSub {
@@ -171,6 +182,7 @@
 		font-size: x-large;
 		font-weight: bold;
 		color: $primary-txt;
+		font-family: $font-primary;
 	}
 
 	.aboutP {
@@ -178,6 +190,7 @@
 		text-align: left;
 		font-size: large;
 		color: $primary-txt;
+		font-family: $font-secondary;
 	}
 }
 
@@ -222,6 +235,7 @@
 		font-size: xxx-large;
 		font-weight: bold;
 		color: $primary-txt;
+		font-family: $font-primary;
 	}
 
 	.projectsp {
@@ -231,6 +245,13 @@
 
 	h3, p {
 		color: $primary-txt;
+		font-family: $font-secondary;
+		text-align: center;
+	}
+
+	h3 {
+		color: $primary-txt;
+		font-family: $font-primary;
 		text-align: center;
 	}
 
@@ -263,6 +284,7 @@
 	font-size: xxx-large;
 	font-weight: bold;
 	color: $primary-txt;
+	font-family: $font-primary;
 	text-align: center;
 }
 
