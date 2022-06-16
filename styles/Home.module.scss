@@ -94,6 +94,7 @@
 			padding-left: 10px;
 			padding-right: 10px;
 			font-weight: bold;
+			font-family: $font-primary;
 		}
 
 		a:hover {
@@ -109,10 +110,19 @@
 			padding-left: 10px;
 			padding-right: 10px;
 			font-weight: bold;
+			font-family: $font-primary;
 		}
 
 		a:hover {
 			color: $primary-hover;
+		}
+
+		.resumeBtn {
+			background-color: $primary-hover;
+		}
+
+		.resumeBtn:hover {
+			background-color: $primary-btn;
 		}
 	}
 }
