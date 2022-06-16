@@ -1,0 +1,315 @@
+@import "mixins";
+
+.container {
+
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+
+	.footer a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+	}
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+.grid {
+	@include desktop() {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.grid {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 800px;
+	}
+}
+
+/* Global Section Styling */
+
+.section {
+	height:100vh;
+	width:100vw;
+}
+
+/* Navigation */
+
+.nav {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: flex-end;
+	color: $primary-txt;
+	background-color: darken( $color-primary, 5%);
+
+	.navLeft {
+
+		margin-right: auto;
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: $primary-hover;
+		}
+	}
+
+	.navRight {
+
+		
+
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: $primary-hover;
+		}
+	}
+}
+
+@media screen and (max-width: 450px){
+	.nav {
+		justify-content: center;
+	}
+}
+
+/* Welcome Section */
+
+.welcome {
+	margin-top: 20%;
+	margin-left: 20%;
+	margin-bottom: 25%;
+	padding-right: 10px;
+	color: $primary-txt;
+}
+
+@include buttonIntxt;
+
+@media screen and (max-width: 450px) {
+	.welcome {
+		margin-top: 25%;
+		margin-left: 5%;
+		
+		.description {
+			font-size: larger;
+		}
+	}
+}
+
+/* About Section */
+
+.about {
+
+	margin-left: 35%;
+	margin-bottom: 25%;
+
+	.aboutImg {
+		margin-top: 15vh;
+	}
+
+	.aboutTitle {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: xxx-large;
+		font-weight: bold;
+		color: $primary-txt;
+	}
+
+	.aboutSub {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: x-large;
+		font-weight: bold;
+		color: $primary-txt;
+	}
+
+	.aboutP {
+		margin-right: 14%;
+		text-align: left;
+		font-size: large;
+		color: $primary-txt;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.about {
+		margin-left: 18%;
+	}
+}
+
+/* Projects Section */
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+	background-color: #DDE4D5;
+	box-shadow: 10px 10px 5px $primary-txt;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+	height: 475px;
+
+	.card h2 {
+		margin: 0 0 1rem 0;
+		font-size: 1.5rem;
+	}
+	
+	.card p {
+		margin: 0;
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+	
+}
+
+.projects {
+
+	.projectstitle {
+		text-align: center;
+		margin-bottom: 5%;
+		font-size: xxx-large;
+		font-weight: bold;
+		color: $primary-txt;
+	}
+
+	.projectsp {
+		padding-bottom: 5%;
+		font-size: large;
+	}
+
+	h3, p {
+		color: $primary-txt;
+		text-align: center;
+	}
+
+	.cardcont {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+
+		a:hover {
+			color: $primary-hover;
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.projectsp {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	
+}
+
+/* Contact form */
+
+.contactTitle {
+	margin-top: 35vh;
+	margin-bottom: 10px;
+	font-size: xxx-large;
+	font-weight: bold;
+	color: $primary-txt;
+	text-align: center;
+}
+
+.formContainer {
+
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10vh;
+	margin-top: 10vh;
+
+	.formInput {
+		margin-bottom: 10%;
+		width: 50vw;
+		height: 4vh;
+		border: none;
+		background-color: $object-mainDown;
+		color: $primary-txt;
+	}
+
+	.formMessage {
+		width: 50vw;
+		height: 30vh;
+		border: none;
+		background-color: $object-mainDown;
+		color: $primary-txt;
+	}
+
+	.formInput:focus, .formMessage:focus {
+		outline: none !important;
+		border: 1px solid $primary-hover;
+		box-shadow: 0 0 5px $primary-hover;
+	}
+
+	.submitDiv {
+		text-align: center;
+		margin-top: 2vh;
+
+		.submitBtn {
+			border: none;
+			color: $primary-txt;
+			background-color: $primary-btn;
+			padding: 10px 15px 10px 15px;
+		}
+
+		.submitBtn:hover {
+			background-color: $primary-hover;
+		}
+	}
+
+}

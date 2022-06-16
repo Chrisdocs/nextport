@@ -1,0 +1,38 @@
+/* Global Variables */
+
+// $color-primary: #AFBC88;
+// $primary-txt: #40531B;
+// $primary-hover: #7AA095;
+// $primary-btn: #40531B;
+// $object-main: #E5EBEA;
+
+$color-primary: #C4CF95;
+$primary-txt: #094C44;
+$primary-hover: #A3B240;
+$primary-btn: #747572;
+$object-main: #DDE4D5;
+$object-mainDown: #D5DDC0;
+
+@mixin desktop() {
+	@media (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin standardBtn {
+	
+}
+
+@mixin buttonIntxt() {
+	.btn {
+		border: 4px solid $primary-btn;
+		background-color: $primary-btn;
+		color: #AFBC88;
+
+	}
+		.btn:hover {
+			border: 4px solid $primary-hover;
+			background-color: $primary-hover;
+			color: #40531B;
+		}
+}
