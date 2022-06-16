@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+	const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,6 +17,7 @@ export default function Contact() {
 		let data = {
 			name,
 			email,
+			subject,
 			message
 		}
 
@@ -66,6 +68,19 @@ export default function Contact() {
 							placeholder="Email"
 							onChange={(e) => {
 								setEmail(e.target.value)
+							}}
+						/>
+					</label>
+					<br />
+
+					<label htmlFor="subject">
+						<input
+							className={styles.formInput}
+							type="text"
+							name="subject"
+							placeholder="subject"
+							onChange={(e) => {
+								setSubject(e.target.value)
 							}}
 						/>
 					</label>
