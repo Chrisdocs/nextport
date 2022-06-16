@@ -10,7 +10,7 @@ export default function (req, res) {
 		host: "smtp.gmail.com",
 		auth: {
 			user: 'cwdevportemail@gmail.com',
-			pass: 'vhkjkpovbqbtsaio'
+			pass: PASSWORD
 		},
 		secure: true,
 	});
