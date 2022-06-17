@@ -138,7 +138,7 @@
 .welcome {
 	margin-top: 20%;
 	margin-left: 20%;
-	margin-bottom: 25%;
+	margin-bottom: 18%;
 	padding-right: 10px;
 	color: $primary-txt;
 	font-family: $font-primary;
@@ -337,6 +337,11 @@
 			color: $primary-txt;
 			background-color: $primary-btn;
 			padding: 10px 15px 10px 15px;
+		}
+
+		button{
+			font-family: $font-primary;
+			font-weight: bold;
 		}
 
 		.submitBtn:hover {
