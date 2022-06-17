@@ -29,7 +29,7 @@ const top = () => {
         <Link href="#contact">
           <a>Contact</a>
         </Link>
-        <a className={styles.resumeBtn}>Resume ↓</a>
+        <a download href="resume.pdf" className={styles.resumeBtn}>Resume ↓</a>
       </div>
     </nav>
   );
