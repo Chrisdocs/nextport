@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from 'next/image';
+import logo from '../public/logo.png';
 import styles from "../styles/Home.module.scss";
 
 export default function Nav() {
@@ -17,7 +19,13 @@ const top = () => {
   return (
     <nav id="nav" className={styles.nav}>
       <div className={styles.navLeft}>
-          <a id="topBtn" onClick={top}>Top ↑</a>
+          <a className={styles.topBtn} onClick={top}>
+						<Image
+							src={logo}
+							height={40}
+							width={40}
+						/>
+					</a>
       </div>
       <div className={styles.navRight}>
         <Link href="#about">
