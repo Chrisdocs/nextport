@@ -13,7 +13,7 @@ export default function Welcome () {
 		<p className={styles.description}>
 			What I do is about You. But if you want to know, here is a bit{" "}
 			<Link href="#about">
-				<a className={styles.btn}>about me ⤵</a>
+				<a className={styles.btn}>about me ↴</a>
 			</Link>
 		</p>
 	</div>
