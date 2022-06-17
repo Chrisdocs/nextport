@@ -341,7 +341,7 @@
 
 		.submitBtn {
 			border: none;
-			color: $primary-txt;
+			color: $color-primary;
 			background-color: $primary-btn;
 			padding: 10px 15px 10px 15px;
 		}
@@ -353,6 +353,7 @@
 
 		.submitBtn:hover {
 			background-color: $primary-hover;
+			color: $primary-txt;
 		}
 	}
 
