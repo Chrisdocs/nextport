@@ -357,3 +357,14 @@
 	}
 
 }
+
+/* Footer */
+
+.footer {
+	p {
+		color: $primary-txt;
+		font-size: small;
+		margin-bottom: 0;
+		font-family: $font-secondary;
+	}
+}
