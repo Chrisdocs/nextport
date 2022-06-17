@@ -19,6 +19,8 @@
   "devDependencies": {
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.0"
   }
 }
