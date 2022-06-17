@@ -28,7 +28,7 @@ export default function About () {
 				and established technologies. Here are some things I've worked
 				on.{" "}
 				<Link href="#projects">
-					<a className={styles.btn}>↴</a>
+					<a className={styles.btn}>{`↴`}</a>
 				</Link>
 			</p>
 		</div>

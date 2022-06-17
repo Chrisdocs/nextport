@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div className={styles.projects} id="projects">
       <p className={styles.projectstitle}>Projects</p>
-			<p className={styles.projectsp}>If you want to see more, take a stroll through my GitHub <a href="https://github.com/Chrisdocs" target="_blank" className={styles.btn}>→</a>
+			<p className={styles.projectsp}>If you want to see more, take a stroll through my GitHub <a href="https://github.com/Chrisdocs" target="_blank" rel="noreferrer" className={styles.btn}>{`→`}</a>
 				</p>
 			<Card />
     </div>
