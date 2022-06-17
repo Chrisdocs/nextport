@@ -358,6 +358,26 @@
 
 }
 
+@media screen and (max-width: 450px) {
+	.formContainer {
+		.formInput{
+			width: 75vw;
+		}
+		.formMessage {
+			width: 75vw;
+		}
+		.submitDiv{
+			.submitBtn{
+				padding: 20px 30px 20px 30px;
+			}
+			button{
+				font-size: large;
+			}
+		}
+	}
+	
+}
+
 /* Footer */
 
 .footer {

@@ -11,7 +11,8 @@
 $color-primary: #C4CF95;
 $primary-txt: #094C44;
 $primary-hover: #A3B240;
-$primary-btn: #747572;
+$btn-txt-hover: #40531B;
+$primary-btn: #7aa095;
 $object-main: #DDE4D5;
 $object-mainDown: #D5DDC0;
 
@@ -32,12 +33,12 @@ $font-secondary: 'Klee One', cursive;
 	.btn {
 		border: 4px solid $primary-btn;
 		background-color: $primary-btn;
-		color: #AFBC88;
+		color: $color-primary;
 
 	}
 		.btn:hover {
 			border: 4px solid $primary-hover;
 			background-color: $primary-hover;
-			color: #40531B;
+			color: $btn-txt-hover;
 		}
 }
