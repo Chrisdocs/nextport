@@ -3,7 +3,7 @@ require('dotenv').config()
 const PASSWORD = process.env.password;
 const EMAIL = process.env.email;
 
-export default function (req, res) {
+export default function ContApi (req, res) {
 
 	let nodemailer = require('nodemailer')
 	const transporter = nodemailer.createTransport({
