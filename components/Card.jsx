@@ -65,7 +65,7 @@ export default function Card() {
               ></Image>
               <div>
                 <h3>
-                  <a target="_blank" href={project.github}>
+                  <a target="_blank" rel="noreferrer" href={project.github}>
                     {project.name}
                   </a>
                 </h3>

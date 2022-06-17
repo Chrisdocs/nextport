@@ -6,7 +6,7 @@ export default function Welcome () {
 	
 	return (
 		<div id="welcome" className={styles.welcome}>
-		<h4>Hello, I'm</h4>
+		<h4>Hello, I{`'`}m</h4>
 
 		<h1 className={styles.title}>Christopher Wolfe;</h1>
 

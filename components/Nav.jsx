@@ -24,6 +24,7 @@ const top = () => {
 							src={logo}
 							height={40}
 							width={40}
+							alt="logo"
 						/>
 					</a>
       </div>

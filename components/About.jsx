@@ -25,7 +25,7 @@ export default function About () {
 				driving growth and transformation. Trained in full-stack
 				development, building modern ground up web applications. Seeking
 				innovative teams developing cutting edge applications using new
-				and established technologies. Here are some things I've worked
+				and established technologies. Here are some things I have worked
 				on.{" "}
 				<Link href="#projects">
 					<a className={styles.btn}>{`↴`}</a>
@@ -36,8 +36,8 @@ export default function About () {
 		<p className={styles.aboutSub}>In my Personal life...</p>
 		<p className={styles.aboutP}>
 			The outdoors call me, and I try to spend as much time there as I
-			can. Whether it's a walk through our local park or a multi-day
-			backpacking trip, I'm game. Then there is the more obvious passion
+			can. Whether it{`'`}s a walk through our local park or a multi-day
+			backpacking trip, I{`'`}m game. Then there is the more obvious passion
 			- technology. I love seeing how technology can change the world,
 			and hopefully in ways which benefit the people who use them.
 		</p>
