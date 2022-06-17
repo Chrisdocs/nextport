@@ -37,7 +37,10 @@ export default function Contact() {
         setName("");
         setEmail("");
         setMessage("");
-      }
+				setSubject("");
+      } else {
+				console.log("Your message failed to send.")
+			}
     });
   };
 
