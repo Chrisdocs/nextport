@@ -268,85 +268,123 @@
 	}
 }
 
-@media screen and (max-width: 450px) {
-
-	.projectsp {
-		margin-right: 5%;
-		margin-left: 5%;
-	}
-	
-}
-
-.contactTitle {
-	margin-top: 35vh;
-	margin-bottom: 10px;
-	font-size: xxx-large;
-	font-weight: bold;
-	color: $primary-txt;
-	font-family: $font-primary;
-	text-align: center;
-}
-
-.formContainer {
-
+.contactContainer{
 	display: flex;
-	justify-content: center;
-	margin-bottom: 10vh;
-	margin-top: 10vh;
-
-	.formInput {
-		margin-bottom: 5%;
-		width: 50vw;
-		height: 4vh;
-		border: none;
-		background-color: $object-mainDown;
-		color: $primary-txt;
-	}
-
-	.formMessage {
-		width: 50vw;
-		height: 30vh;
-		border: none;
-		background-color: $object-mainDown;
-		color: $primary-txt;
-	}
-
-	.charCount {
-		font-family: $font-primary;
-		color: $primary-txt;
-		font-size: small;
-		margin: 0;
-	}
-
-	.formInput:focus, .formMessage:focus {
-		outline: none !important;
-		border: 1px solid $primary-hover;
-		box-shadow: 0 0 5px $primary-hover;
-	}
-
-	.submitDiv {
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+	.contactTitle{
 		text-align: center;
-		margin-top: 3vh;
-
-		.submitBtn {
-			border: none;
-			color: $color-primary;
-			background-color: $primary-btn;
-			padding: 10px 15px 10px 15px;
-		}
-
-		button{
-			font-family: $font-primary;
-			font-weight: bold;
-		}
-
-		.submitBtn:hover {
+		margin-bottom: 5%;
+		font-size: xxx-large;
+		font-weight: bold;
+		color: $primary-txt;
+		font-family: $font-primary;
+	}
+	.contactText{
+		text-align: center;
+		margin-bottom: 5%;
+		font-size: large;
+		font-family: $font-secondary;
+	}
+	.contactBtn{
+		margin-top: 5%;
+		margin-bottom: 5%;
+		font-size: large;
+		font-weight: bolder;
+		font-family: $font-secondary;
+		border: none;
+		width: 15%;
+		color: $color-primary;
+		background-color: $primary-btn;
+		border-radius: 10px;
+		padding: 2px 0 2px 0;
+		//hover
+		&:hover{
 			background-color: $primary-hover;
-			color: $primary-txt;
 		}
 	}
-
 }
+
+// @media screen and (max-width: 450px) {
+
+// 	.projectsp {
+// 		margin-right: 5%;
+// 		margin-left: 5%;
+// 	}
+	
+// }
+
+// .contactTitle {
+// 	margin-top: 35vh;
+// 	margin-bottom: 10px;
+// 	font-size: xxx-large;
+// 	font-weight: bold;
+// 	color: $primary-txt;
+// 	font-family: $font-primary;
+// 	text-align: center;
+// }
+
+// .formContainer {
+
+// 	display: flex;
+// 	justify-content: center;
+// 	margin-bottom: 10vh;
+// 	margin-top: 10vh;
+
+// 	.formInput {
+// 		margin-bottom: 5%;
+// 		width: 50vw;
+// 		height: 4vh;
+// 		border: none;
+// 		background-color: $object-mainDown;
+// 		color: $primary-txt;
+// 	}
+
+// 	.formMessage {
+// 		width: 50vw;
+// 		height: 30vh;
+// 		border: none;
+// 		background-color: $object-mainDown;
+// 		color: $primary-txt;
+// 	}
+
+// 	.charCount {
+// 		font-family: $font-primary;
+// 		color: $primary-txt;
+// 		font-size: small;
+// 		margin: 0;
+// 	}
+
+// 	.formInput:focus, .formMessage:focus {
+// 		outline: none !important;
+// 		border: 1px solid $primary-hover;
+// 		box-shadow: 0 0 5px $primary-hover;
+// 	}
+
+// 	.submitDiv {
+// 		text-align: center;
+// 		margin-top: 3vh;
+
+// 		.submitBtn {
+// 			border: none;
+// 			color: $color-primary;
+// 			background-color: $primary-btn;
+// 			padding: 10px 15px 10px 15px;
+// 		}
+
+// 		button{
+// 			font-family: $font-primary;
+// 			font-weight: bold;
+// 		}
+
+// 		.submitBtn:hover {
+// 			background-color: $primary-hover;
+// 			color: $primary-txt;
+// 		}
+// 	}
+
+// }
 
 @media screen and (max-width: 450px) {
 	.formContainer {
