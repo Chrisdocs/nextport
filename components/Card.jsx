@@ -6,6 +6,7 @@ import smapi from "../public/smapi.png";
 import bike from "../public/bike.png";
 import md from "../public/md.png";
 import dnd from "../public/dnd.png";
+import cloud from "../public/cloud.png";
 
 export default function Card() {
   let projects = [
@@ -47,6 +48,16 @@ export default function Card() {
       web: "https://chrisdocs.github.io/darksky/",
       img: dnd,
       alt: "graphic with dragon",
+			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000 
+    },
+		{
+      name: "WeatherGet",
+      about: "A web app for getting the weather",
+      tech: "Next.js Chart.js Sass Moment.js",
+      github: "https://github.com/Chrisdocs/weather",
+      web: "https://weather-zeta-drab.vercel.app/",
+      img: cloud,
+      alt: "graphic of cloud",
 			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000 
     },
   ];
